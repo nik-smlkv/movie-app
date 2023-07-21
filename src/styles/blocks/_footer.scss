@@ -1,0 +1,223 @@
+.footer {
+	background: $footer-bg;
+}
+
+.footer__body {
+	margin: 25px 0px 65px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer__subscribe {
+}
+
+@include mediaTablet(){
+	.footer{
+		padding: 0px 100px;
+	}
+}
+.subscribe__logo {
+	margin: 0px 0px 9.29px 0px;
+}
+
+.subscribe__text{
+	margin: 0px 0px 14px 0px;
+}
+.subscribe__button {
+	padding: 7.5px 48px;
+	border-radius: 8px;
+	@include style__text(12px, $white, $font-main);
+	font-weight: 500;
+}
+
+.subscribe__button {
+	padding: 7.5px 48px;
+	border-radius: 8px;
+	@include style__text(12px, $white, $font-main);
+	font-weight: 500;
+}
+
+.button {
+	background: $button-color;
+	color: $white;
+	transition: 0.5s ease;
+}
+
+.button:hover{
+	opacity: 0.6;
+}
+
+.footer__content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer__pay {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.pay {
+	margin: 0px 0px 15px 0px;
+}
+
+.movie__list {
+}
+
+.movie__item:not(:last-child) {
+	margin: 0px 0px 16px 0px;
+}
+
+.movie__item:first-child {
+	@include style__text(18px, $white, $font-main);
+}
+
+.movie__item {
+	@include style__text(16px, $white, $font-main);
+	font-weight: 400;
+	line-height: 130%;
+}
+
+.footer_events {
+}
+
+.events__list {
+}
+
+.events__item:not(:last-child) {
+	margin: 0px 0px 12px 0px;
+}
+
+.events__item:first-child {
+	@include style__text(18px, $white, $font-main);
+}
+
+.events__item {
+	@include style__text(16px, $white, $font-main);
+	font-weight: 400;
+	line-height: 130%;
+}
+.footer__sport {
+}
+
+.sport__list {
+}
+
+.sport__item:not(:last-child) {
+	margin: 0px 0px 16px 0px;
+}
+
+.sport__item:first-child {
+	@include style__text(18px, $white, $font-main);
+}
+
+.sport__item {
+	@include style__text(16px, $white, $font-main);
+	font-weight: 400;
+	line-height: 130%;
+}
+
+.footer__politic {
+	margin: 0px 0px 6px 0px;
+	> p {
+		color: $button-color;
+	}
+}
+
+.footer__adress {
+	> p {
+		color: $white;
+		opacity: 0.5;
+	}
+	margin: 0px 0px 21px 0px;
+}
+
+@media (max-width: 369px){
+	.footer__pay{
+		justify-content: center;
+	}
+
+}
+
+@include mediaPhone(){
+	.footer{
+		padding: 0px 15px;
+	}
+	.footer__body{
+		flex-direction: column;
+		align-items: center;
+		margin: 0px 0px 31px 0px;
+	}
+	.subscribe__logo{
+		margin: 41px 0px 0px 0px;
+		> img{
+			width: 200px;
+		}
+	}
+	.subscribe__text{
+		display: none;
+	}
+	.subscribe__button{
+		display: none;
+	}
+	.movie__list{
+		text-align: center;
+		margin: 0px 0px 20px 0px;
+	}
+	.events__list{
+		margin: 0px 0px 20px 0px;
+		text-align: center;
+	}
+	.sport__list{
+		text-align: center;
+	}
+	.footer__politic{
+		text-align: center;
+	}
+	.footer__adress{
+		text-align: center;
+	}
+	.footer__subscrib{
+		text-align: center;
+	}
+	.pay{
+		margin: 61px 0px 0px 0px;
+	}
+}
+
+.subscribe__link {
+	border-radius: 8px;
+	padding: 15px 96px;
+	@include style__text(16px, $white, $font-main);
+	font-weight: 700;
+	margin: 0px 0px 0px 0px;
+}
+
+.subscribe__title{
+	margin: 0px 0px 30px 100px;
+	gap: 20px;
+	justify-content: flex-end;
+	> p{
+		text-align: center;
+		@include style__text(24px, $white, $font-main);
+		font-weight: 700;
+	}
+}
+
+.footer__subscrib::before,
+.footer__subscrib::after
+{
+	opacity: 0.5;
+	margin: 22px 0px;
+	content: "";
+	border-bottom: 1px solid $text;
+}
+
+.subscribe__subtitle{
+	margin: 0px 0px 16px 0px;
+	line-height: 130%;
+	font-weight: 400;
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "../base/vars";
+@import "./mixins";
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	background: $background;
+}
+
+
+[class*="__container"]{
+	max-width: 1210px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+@include mediaTablet(){
+	[class*="__container"]{
+		max-width: 696px;
+		margin: 0 auto;
+	}
+}
+
+.main {
+	
+	flex: 1 1 auto;
+}
+
+button{
+	cursor: pointer;
+}

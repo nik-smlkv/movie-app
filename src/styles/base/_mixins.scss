@@ -1,0 +1,22 @@
+@import './vars';
+
+//Mixin for a style text
+@mixin style__text($font-size, $color, $ff) {
+	font-size: $font-size;
+	color: $color;
+	font-family: $ff;
+}
+
+//Mixin for a media request
+@mixin mediaTablet {
+	@media screen and (max-width: $tablet) {
+		@content;
+	}
+}
+
+//Mixin for a media request
+@mixin mediaPhone {
+	@media screen and (max-width: $phone) {
+		@content;
+	}
+}

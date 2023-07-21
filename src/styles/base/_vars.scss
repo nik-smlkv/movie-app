@@ -1,0 +1,17 @@
+//Font-family
+$font-main: 'Roboto', sans-serif;
+
+//Color
+$background: linear-gradient(180deg, #4A113C 0%, #261121 15.63%, #261121 100%);
+$footer-bg: var(--secondary, #4A113C);
+$button-color: #FE9B0E;
+$white: #ffffff;
+$text: var(--text-2, rgba(255, 255, 255, 0.70));;
+
+//Media
+$tablet: 869.9px;
+$phone: 376.99px;
+
+.no-scroll {
+	overflow-y: hidden;
+}
